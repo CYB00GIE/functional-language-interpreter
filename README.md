@@ -36,10 +36,10 @@ Note that when declaring and evaluating functions, it is possible to get recursi
 Let's look at a few examples:
 Calling the function to add two numbers:
 add(3, 7)
-> 10
+/> 10
 Nested call to the function to add:
 add(add(3, 5), add(10, 10))
-> 28
+/> 28
 Declaring and calling a function with no arguments that always returns a constant:
 myConst <- 7
 >
