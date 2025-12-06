@@ -1,7 +1,7 @@
 # functional-language-interpreter
 An interpreter for a simple functional programming language. The project was a part of my university course Data Structures and Algorithms. The following is the requirements that were given to me when the project was assigned.
 
-Topic 5: Interpreter for the functional language ThisFunc.
+## Topic 5: Interpreter for the functional language ThisFunc.
 
 The interpreter must be able to work in interactive mode, in which it allows the user to write a line of code that is evaluated and the result of the evaluation is displayed. Also, your interpreter must be able to run on files that are to be executed and the result of them to be printed on the output of your program.
 
