@@ -36,67 +36,86 @@ Note that when declaring and evaluating functions, it is possible to get recursi
 Let's look at a few examples:
 Calling the function to add two numbers:
 add(3, 7)
+
 \> 10
 
 Nested call to the function to add:
 add(add(3, 5), add(10, 10))
+
 \> 28
 
 Declaring and calling a function with no arguments that always returns a constant:
 myConst <- 7
+
 \>
 
 myConst()
+
 \> 7
 
 Declaring and calling a function with arguments:
 doubleArg <- add(#0, #0)
+
 \>
 
 doubleArg(5)
+
 \> 10
 
 Declaring and calling a more complex function with arguments:
 sumSqr <- add(mul(#0, #0), mul(#1, #1))
+
 \>
 
 sumSqr(5, 10)
+
 \> 125
 
 Using the conditional function:
 if(1, 7, 11)
+
 \> 7
 
 if(0, 7, 11)
+
 \> 11
 
 if(add(5, -5), 3, 5)
+
 \> 5
 
 Using lists:
 myList <- list(1, 2, 3, 4)
+
 \>
 
 myList()
+
 \> [1, 2, 3, 4]
 
 double <- mul(#0, #0)
+
 \>
 
 map(double, myList())
+
 \> [1, 4, 9, 16]
 
 biggerThanTwo <- nand(le(#0, 2), 1)
+
 \>
 
 filter(biggerThanTwo, myList())
+
 \> [3, 4]
 
 Recursion:
 fact <- if(eq(#0, 0), 1, mul(#0, fact(sub(#0, 1))))
+
 \>
 
 fact(0)
+
 \> 1
 
 fact(5)
